@@ -1,9 +1,9 @@
 var mouseEvent = null;
-var menu = new Menu($$(".menu"), menu_items);
-menu.setup();
+// var menu = new Menu($$(".menu"), menu_items);
+// menu.setup();
 
-createBoxes(boxes);
-stageLoop();
+// createBoxes(boxes);
+// stageLoop();
 
 document.addEventListener("mousemove", function(_e){
 	mouseEvent = _e;

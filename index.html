@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JULIA</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Julia Language</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> -->
+	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/tachyons.css">
-		<link rel="stylesheet" href="assets/css/menu.css">
+	<link rel="stylesheet" href="assets/css/menu.css">
+		<link rel="stylesheet" href="assets/css/slide.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,47 +19,71 @@
 			
 		</div>
 		<div id="foreground">
-			<div class="menu">
-				
+			<div class="header fl w-100 bg-white lh-copy">
+				<div class="container">
+					<div class="fl ham flex flex-column justify-center items-center ma2">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="fl w-30 ph4-ns ph2-s pv2"><img class="w4" src="./assets/img/julia.png"></div>
+					<nav class="menu_items fl w-70 flex flex-row-reverse list pa4">
+						<li class="mh2">JuliaCon</li>
+						<li class="mh2">Blog</li>
+						<li class="mh2">Features</li>
+						<li class="mh2">About</li>
+					</nav>
+					
+				</div>
 			</div>
 			<div class="main flex flex-column">
-				<div class="heading flex flex-column justify-center items-center"><h1>Julia</h1></div>
-				<div class="oneline tc lh-copy">Walks like Python, Runs like C</div>
-				<div class="content">
+				<div class="heading flex flex-column justify-center items-center">
+					<div class="slide-show" id="imageSlideShow">
+						
+					</div>
+				</div>
+				<div class="oneline">
 					<div class="container">
-						<div class="fl w-100 pa2" id="about">
-							<div class="fl w-70 pa2">
-								<p class="lh-copy f5 f3-m f2-l measure center pv4">Julia is a technical computing language.Its familiar syntax and smart compiler give you the highest possible performance from the easiest possible code.</p>
+						<p class="tc">Walks like Python, Runs like C</p>
+					</div>
+					</div>
+				<div class="content">
+					<div class="container ">
+						<div class="fl-ns w-100 pa2 flex-s flex-column justify-center items-center" id="about">
+							<div class="fr-ns w-30 tc pa2"><img src="./assets/img/julia_logo.png"></div>
+							<div class="fr-ns w-70-ns tc pa2">
+								<p class="lh-copy f5 f3-m f2-l measure center pv2">Julia is a technical computing language.Its familiar syntax and smart compiler give you the highest possible performance from the easiest possible code.</p>
+								<button class="btn pa3 bg-black near-white br3 ma2 download">Download<img src="./assets/img/download.png"></button>
 							</div>
-							<div class="fl w-30 pa2"><img src="./assets/img/julia_logo.png"></div>
+							
 						</div>
 					</div>
 					<div class="fl w-100 pa2" id="videos">
-						<div class="container">
-							<div class="fl w-60 pa2">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLP8iPy9hna6QpP6vqZs408etJVECPKIev" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<div class="container flex-s flex-column">
+							<div class="fl w-60-ns pa2 h5-ns slide-show" id="videoSlideShow">
+								<!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLP8iPy9hna6QpP6vqZs408etJVECPKIev" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 							</div>
-							<div class="fl w-40 f5 f3-m f3-l pa2">
-								<p class="lh-copy">JuliaCon 2017, the annual conference on Julia, was held from June 20th to June 24th at the University of California, Berkeley. This is a random video from our YouTube playlist of the talks. Click on the playlist icon to check out the other videos.</p>
+							<div class="fl w-40-ns f5 f3-m f3-l pa2 near-white">
+								<p class="lh-copy">JuliaCon 2017, the annual conference on Julia, was held from June 20th to June 24th at the University of California, Berkeley. These are videos from our YouTube playlist of the talks. Click on the playlist icon to check out the other videos.</p>
 							</div>
 						</div>
 					</div>
 					<div class="container">
 						<div class="fl w-100 pa2" id="domains">
-							<div class="measure pa2 f2-l">Domains </div>
-							<div class="domain-container flex flex-wrap justify-between">
+							<div class="measure pa2 f2 tc-s">Domains </div>
+							<div class="domain-container flex flex-wrap justify-between-ns justify-center-s">
 								
 							</div>
 						</div>
 					</div>
 					<div class="fl w-100 pa2" id="blogTwitter">
 						<div class="container">
-							<div class="fl w-50">
-								<div class="measure pa2 f2-l near-white lh-copy">People are taking about it</div>
+							<div class="fl-ns w-50-ns w-80 center">
+								<div class="measure pa2 f2-l near-white lh-copy tc-s">People are taking about it</div>
 								<a class="twitter-timeline" data-height="400" href="https://twitter.com/JuliaLanguage?ref_src=twsrc%5Etfw">Tweets by JuliaLanguage</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 							</div>
-							<div class="fl w-50">
-								<div class="measure pa2 f2-l near-white lh-copy">Blog</div>
+							<div class="fl-ns w-50-ns w-80 center">
+								<div class="measure pa2 f2-l near-white lh-copy tc-s">Blog</div>
 
 							</div>
 						</div>
@@ -64,65 +91,65 @@
 					<div class="container">
 						<div class="fl w-100 pa2" id="features">
 							<div>
-								<p class="measure pa2 f2-l"> Julia has great features
+								<p class="measure pa2 f2"> Julia has great features
 									<!-- TODO : Add links -->
 									<ul class="list pl0 features-list flex flex-wrap justify-between">
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2 -ns f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Multiple dispatch</div>
 											<div class="tag navy f6">Providing the ability to define function behavior across many combinations of argument types</div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Dynamic type system</div>
 											<div class="tag navy f6">types for documentation, optimization, and dispatch</div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Good performance</div>
 											<div class="tag navy f6">approaching that of statically-compiled languages like C</div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Built-in package manager</div><div class="tag navy f6"></div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Lisp-like macros and other metaprogramming facilities</div>
 											<div class="tag navy f6"></div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Call Python functions</div>
 											<div class="tag navy f6">use the PyCall package</div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Call C functions directly</div>
 											<div class="tag navy f6">no wrappers or special APIs</div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Powerful shell-like capabilities for managing other processes</div>
 											<div class="tag navy f6"></div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Designed for parallelism and distributed computation</div>
 											<div class="tag navy f6"></div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Coroutines</div>
 											<div class="tag navy f6">lightweight “green” threading</div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">User-defined types are as fast and compact as built-ins</div>
 											<div class="tag navy f6"></div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Automatic generation of efficient, specialized code for different argument types</div>
 											<div class="tag navy f6"></div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Elegant and extensible conversions and promotions for numeric and other types</div>
 											<div class="tag navy f6"></div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">Efficient support for Unicode, including but not limited to UTF-8</div>
 											<div class="tag navy f6"></div>
 										</li>
-										<li class="pa2 w-48 f5 f4-m f4-l flex flex-column justify-between br2">
+										<li class="pa2  f5 f4-m f4-l flex flex-column justify-between br2 ma3 w-100-ns w-48-ns w-100">
 											<div class="prop">MIT licensed</div>
 											<div class="tag navy f6">free and open source</div>
 										</li>
@@ -134,7 +161,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="cursor"></div>
+		
 	</div>
 	<script src="assets/js/helpers.js"></script>
 	<script src="assets/js/menu_items.js"></script>
@@ -142,5 +169,6 @@
 	<script src="assets/js/menu.js"></script>
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/domains.js"></script>
+	<script src="assets/js/slide.js"></script>
 </body>
 </html>
