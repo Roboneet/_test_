@@ -10,11 +10,11 @@
 .slide{
 	overflow: hidden;
 	position: absolute;
-	width: 100vw;
+	width: 100%;
 	top:0;
 	bottom:0;
 	left: 100%;
-	transition: left 1s cubic-bezier(0.85, 0.26, 0.15, 0.72);
+	transition: left 1s cubic-bezier(0.03, 0.26, 0.1, 0.99);
 	display: flex;
 	-webkit-justify-content: center;
 	        justify-content: center;
@@ -24,22 +24,20 @@
 	        flex-direction: column;
 }
 
-.slide:nth-child(1){
-	background: #f00;
-}
-
-.slide:nth-child(2){
-	background: #0f0;
-}
-
 .show{
 	left: 0;
 }
 
+/* position default: bottom */
 .slide .text{
-	width: 100vw;
+	width: 100%;
 	text-align: center;
-	transition: all .5s cubic-bezier(0.03, 0.26, 0.1, 0.99) 1s;
+	transition: all .5s cubic-bezier(0.03, 0.26, 0.1, 0.99);
+	-webkit-transition-delay: 1s;
+	   -moz-transition-delay: 1s;
+	    -ms-transition-delay: 1s;
+	     -o-transition-delay: 1s;
+	        transition-delay: 1s;
 	position:relative;
 	top: 100%;
 }
