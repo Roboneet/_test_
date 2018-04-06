@@ -378,3 +378,43 @@ One line
 .blog .blog-ele:hover{
 	text-decoration: underline;
 }
+
+/* community */
+
+#community{
+	background: #63ac56;
+}
+
+#community img{
+	height: 100px;
+	width: auto;
+}
+
+#community .invite{
+	background:#539247;
+	box-shadow: 0 5px 0 #305429;
+	transition: all .5s linear;
+	cursor: pointer;
+}
+
+#community a{
+	color:inherit;
+	text-decoration: none;
+}
+
+#community .invite:active{
+	box-shadow: 0 2px 0 #305429;
+	transform: translateY(3px);
+}
+
+/* footer */
+.footer{
+	background: #4a4949;
+	color: #fff;
+	
+}
+
+.footer a{
+	color: inherit;
+	cursor: pointer;
+}

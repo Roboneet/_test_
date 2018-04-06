@@ -3,12 +3,12 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Julia Language</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/tachyons.css">
 	<link rel="stylesheet" href="assets/css/menu.css">
 		<link rel="stylesheet" href="assets/css/slide.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 <body>
 	<div id="wrapper">
@@ -38,6 +38,7 @@
 					
 				</div>
 			</div>
+			<!--  end of header -->
 
 			<!--  main -->
 			<div class="main flex flex-column">
@@ -140,13 +141,37 @@
 					</div>
 					<!-- end of features -->
 
+					<!-- community section -->
+					<div class="fl w-100 pa2 white pa4" id="community">
+						<div class="container">
+							<div class="f2 tc">Join us on Slack!</div>
+							<div class="flex flex-row pa4 justify-center items-center">
+								<img class="slack-link" src="assets/img/slack.png">
+								<a href="https://slackinvite.julialang.org/"><div class="pa3 invite br3 mh4"> Get an Invite! </div></a>
+							</div>
+						</div>
+					</div>
+					<!-- end of community section-->
 				</div>
 				<!-- end of content -->
 			</div>
 			<!-- end of main -->
+
+			<!-- footer -->
+			<div class="footer">
+				<div class="container pa5">
+					<div class="f5 tc">Julia is a <a href="https://www.numfocus.org/sponsored-projects/">NumFocus project</a>.We thank <a href="https://fastly.com">Fastly</a> for their generous infrastructural support.<a href="https://github.com/JuliaLang/julialang.github.com/edit/master/learning/index.md">Edit this page on GitHub.</a></div>
+					<div class="flex flex-column justify-center items-center pv4">
+						<a onclick="open_window('MjI1Nw==')"><div class='pa3 bg-white black br3'>Donate Now!</div></a>
+					</div>
+				</div>
+
+			</div>
+			<!-- end of footer -->
 		</div>
 		
 	</div>
+	
 	<script src="assets/js/helpers.js"></script>
 	<script src="assets/js/menu_items.js"></script>
 	<script src="assets/js/header_config.js"></script>
@@ -157,5 +182,6 @@
 	<script src="assets/js/youtube.js"></script>
 	<script src="assets/js/features.js"></script>
 	<script src="assets/js/blog.js"></script>
+
 </body>
 </html>

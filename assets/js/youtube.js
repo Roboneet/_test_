@@ -57,8 +57,7 @@ var video_slide_data = videoIds.map((el, i)=>{
 
 var videoSlide = new Slide(video_slide_data, $$("#videoSlideShow"), {
   list:false,
-  arrows: true, 
-  debug:true, 
+  arrows: true,  
   transitionDelay:"0s", 
   animationIn:"fadeInRight",
   events:{

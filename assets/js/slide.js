@@ -32,17 +32,12 @@ function Slide(data, container, {list=true, arrows=false, debug=false, events={}
 		var slide = document.createElement('div');
 		slide.className = "slide";
 		slide.style.background = ele.img;
-		
-
 		slide.innerHTML = ("<div class='text'>" + ele.html + "</div></div>").valueOf();
 		slide.querySelector('.text').style.transitionDelay = transitionDelay;
 		for(var k in events){
 			slide[k] = events[k];
 		}
-
-		
 		fragment.appendChild(slide);
-
 		state.appendChild(document.createElement('li'))
 	})
 	if(this.list)
