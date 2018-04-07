@@ -78,7 +78,7 @@ const features_data = [
 
 function createFeatures(data){
 	var html = data.map((el, i) =>{
-		return '<li class="pa2 f5 f4-m f4-l br2 ma3 w-100-ns w-48-ns w-100 fl">\
+		return '<li class="pa3 f5 f4-m f4-l br2 ma3 w-100-ns w-48-ns w-100 fl box">\
 					<div class="feature-text fl w-70">\
 						<div class="prop f5">' + el.prop +'</div>\
 						<div class="tag navy f6">' + el.tag + '</div>\

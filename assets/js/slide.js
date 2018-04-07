@@ -60,9 +60,9 @@ function Slide(data, container, {list=true, arrows=false, debug=false, events={}
 
 Slide.prototype.stop = function(){
 	if(this.timeouts[0])
-		clearTimeout(scope.timeouts[0]);
+		clearTimeout(this.timeouts[0]);
 	if(this.timeouts[1]){
-		clearTimeout(scope.timeouts[1]);
+		clearTimeout(this.timeouts[1]);
 		this.removeOld();
 	}
 }

@@ -3,12 +3,13 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Julia Language</title>
+	
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/tachyons.css">
 	<link rel="stylesheet" href="assets/css/menu.css">
-		<link rel="stylesheet" href="assets/css/slide.css">
+	<link rel="stylesheet" href="assets/css/slide.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
 </head>
 <body>
 	<div id="wrapper">
@@ -22,21 +23,30 @@
 
 			<!--  header -->
 			<div class="header fl w-100 bg-white lh-copy">
-				<div class="container">
-					<div class="fl ham flex flex-column justify-center items-center ma2">
+				
+					<div class="fl ham flex  flex-column justify-center items-center ma2">
 						<div></div>
 						<div></div>
 						<div></div>
 					</div>
-					<div class="fl w-30 ph4-ns ph2-s pv2"><img class="w4" src="./assets/img/julia.png"></div>
-					<nav class="menu_items fl w-70 flex flex-row-reverse list pa4">
-						<li class="mh2"><a href="#videos">JuliaCon</a></li>
-						<li class="mh2"><a href="#blogTwitter">Blog</a></li>
-						<li class="mh2"><a href="#features">Features</a></li>
-						<li class="mh2"><a href="#about">About</a></li>
+					<div class="fl w-20 ph4-ns ph2-s pv2"><img class="w4" src="./assets/img/julia.png"></div>
+					<nav class="menu_items fl w-80 flex flex-wrap flex-row-reverse list pa4 fw1 f6">
+						<li class="mh2"><a href="http://juliacon.org" class="">juliacon</a></li>
+						<li class="mh2"><a href="/soc/ideas-page.html" class="">GSoC</a></li>
+						<li class="mh2"><a href="/publications/" class="">publications</a></li>
+						<li class="mh2"><a href="/teaching/" class="">teaching</a></li>
+						<li class="mh2"><a href="/learning/" class="">learning</a></li>
+						<li class="mh2"><a href="/ecosystems" class="">ecosystems</a></li>
+						<li class="mh2"><a href="#community" class="">community</a></li>
+						<li class="mh2"><a href="/blog/" class="">blog</a></li>
+						<li class="mh2"><a href="http://pkg.julialang.org/" class="">packages</a></li>
+						<li class="mh2"><a href="http://docs.julialang.org/" class="">docs</a></li>
+						<li class="mh2"><a href="/downloads/" class="active">downloads</a></li>
+						<li class="mh2"><a href="https://github.com/JuliaLang/julia" class="">source</a></li>
+						
 					</nav>
 					
-				</div>
+				
 			</div>
 			<!--  end of header -->
 
@@ -53,7 +63,7 @@
 				<!-- oneliner -->
 				<div class="oneline">
 					<div class="container">
-						<p class="tc">Walks like Python, Runs like C</p>
+						<p class="tc fw7">Walks like Python, Runs like C</p>
 					</div>
 				</div>
 
@@ -61,11 +71,11 @@
 				<div class="content">
 
 					<!-- Download -->
-					<div class="container ">
+					<div class="container">
 						<div class="fl-ns w-100 pa2 flex-s flex-column justify-center items-center" id="about">
 							<div class="fr-ns w-30 tc pa2"><img src="./assets/img/julia_logo.png"></div>
 							<div class="fr-ns w-70-ns tc pa2">
-								<p class="lh-copy f5 f3-m f2-l measure center pv2">Julia is a technical computing language.Its familiar syntax and smart compiler give you the highest possible performance from the easiest possible code.</p>
+								<p class="lh-copy f5 f3-m f2-l measure center pv2 fw1">Julia is a technical computing language.Its familiar syntax and smart compiler give you the highest possible performance from the easiest possible code.</p>
 								<button class="btn pa3 bg-black near-white br3 ma2 download">Download<img src="./assets/img/download.png"></button>
 							</div>
 							
@@ -80,7 +90,7 @@
 								<!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLP8iPy9hna6QpP6vqZs408etJVECPKIev" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 							</div>
 							<div class="fl w-40-ns f5 f3-m f3-l pa2 near-white desc">
-								<p class="lh-copy ph4 tj">JuliaCon 2017, the annual conference on Julia, was held from June 20th to June 24th at the University of California, Berkeley. These are videos from our YouTube playlist of the talks. Click on the playlist icon to check out the other videos.</p>
+								<p class="lh-copy ph4 tj fw1">JuliaCon 2017, the annual conference on Julia, was held from June 20th to June 24th at the University of California, Berkeley. These are videos from our YouTube playlist of the talks. Click on the playlist icon to check out the other videos.</p>
 							</div>
 						</div>
 					</div>
@@ -89,7 +99,7 @@
 					<!-- domains -->
 					<div class="container">
 						<div class="fl w-100 pa2" id="domains">
-							<div class="measure pa2 f2 tc-s">Domains </div>
+							<div class="measure pa2 f2 tc-s fw1">Domains </div>
 							<div class="domain-container flex flex-wrap justify-between-ns justify-center-s">
 								
 							</div>
@@ -100,25 +110,25 @@
 					<!-- twitter and blog -->
 					<div class="fl w-100 pa2" id="blogTwitter">
 						<div class="container">
-							<div class="fl-ns w-50-ns w-80 center pa4">
-								<div class="measure pa2 f2-l near-white lh-copy tc-s">People are taking about it</div>
+							<div class="fl-ns w-50-ns w-100 center pa4">
+								<div class="measure pa2 f2-l near-white lh-copy tc-s fw1">People are taking about it</div>
 								            <a class="twitter-timeline"  href="https://twitter.com/hashtag/julialang" data-widget-id="982277860403511301">#julialang Tweets</a>
 	            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           
 							</div>
-							<div class="fl-ns w-50-ns w-80 center pa4">
-								<div class="measure pa2 f2-l near-white lh-copy tc-s">Blog</div>
+							<div class="fl-ns w-50-ns w-100 center pa4">
+								<div class="measure pa2 f2-l near-white lh-copy tc-s  fw1">Blog</div>
 								<!-- (blog.js) -->
 								<!-- julia blog --> 
-								<div class="blog bg-near-white br3 mv2" id="juliablog">
+								<div class="blog bg-white br3 mv2" id="juliablog">
 
 								</div>
 								<!-- juliabloggers --> 
-								<div class="blog bg-near-white br3 mv2" id="juliabloggers">
+								<div class="blog bg-white br3 mv2" id="juliabloggers">
 
 								</div>
 								<!-- juliacomputing --> 
-								<div class="blog bg-near-white br3 mv2" id="juliacomputing">
+								<div class="blog bg-white br3 mv2" id="juliacomputing">
 
 								</div>
 							</div>
@@ -130,11 +140,27 @@
 					<div class="container">
 						<div class="fl w-100 pa2" id="features">
 							<div>
-								<p class="measure pa2 f2"> Julia has great features
-									<!-- TODO : Add links -->
-									<ul class="list pl0 features-list flex flex-wrap justify-between">
+								<p class="measure pa2 f2  fw1"> Julia has great features
+									<div>
+										<img class="fr-ns w-50-ns w-100" src="assets/img/benchmarks.png" style="
+">
+										<p class="fl-ns w-50-ns w-100 lh-copy fw7 tj measure pv4-ns ph4-s">Julia’s LLVM-based just-in-time (JIT) compiler combined with the language’s design allow it to approach and often match the performance of C.
+To get a sense of the relative performance of Julia compared to other languages that can or could be used for numerical and scientific computing, we’ve written a small set of micro-benchmarks in a variety of languages:
+<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.c">C</a>,
+<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.f90">Fortran</a>,
+<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.jl">Julia</a>,
+<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.py">Python</a>,
+<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.m">Matlab/Octave</a>,
+<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.R">R</a>,
+<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.js">JavaScript</a>,
+<a href="https://github.com/JuliaLang/Microbenchmarks/tree/master/java/src/main/java">Java</a>,
+<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.lua">Lua</a>,
+<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.nb">Mathematica</a>.
+We encourage you to skim the code to get a sense for how easy or difficult it is to do numerical programming in each language</p>
 										
-									</ul>
+									</div>	
+									<!-- TODO : Add links -->
+									<ul class="list pl0 features-list flex flex-wrap justify-between"></ul>
 								</p>
 							</div>
 						</div>
@@ -142,13 +168,21 @@
 					<!-- end of features -->
 
 					<!-- community section -->
-					<div class="fl w-100 pa2 white pa4" id="community">
-						<div class="container">
-							<div class="f2 tc">Join us on Slack!</div>
-							<div class="flex flex-row pa4 justify-center items-center">
+					<div class="fl w-100 white" id="community">
+						<div class="container  pa4-ns pv4">
+							<div class="f2 tc fw1">Join us on Slack!</div>
+							<div class="flex flex-wrap flex-row pa4-ns justify-center items-center">
 								<img class="slack-link" src="assets/img/slack.png">
-								<a href="https://slackinvite.julialang.org/"><div class="pa3 invite br3 mh4"> Get an Invite! </div></a>
+								<a href="https://slackinvite.julialang.org/"><div class="pa3 invite br3 mh4"> Get an Invite </div></a>
 							</div>
+						</div>
+					    <div class="links w-100 ">
+						    <ul class="list pv4 flex justify-center flex-wrap">
+							    <a><li class="bg-white dim"><img src="assets/img/github.png"></li></a>
+							    <a><li class="bg-white dim"><img src="assets/img/discourse.png"></li></a>
+							    <a><li class="bg-white dim"><img src="assets/img/youtube.png"></li></a>
+							    <a><li class="bg-white dim"><img src="assets/img/twitter.png"></li></a>
+							</ul>
 						</div>
 					</div>
 					<!-- end of community section-->
@@ -182,6 +216,5 @@
 	<script src="assets/js/youtube.js"></script>
 	<script src="assets/js/features.js"></script>
 	<script src="assets/js/blog.js"></script>
-
 </body>
 </html>

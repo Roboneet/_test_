@@ -15,7 +15,7 @@ const domains = [
 	,href: "https://github.com/JuliaData"
 	,img: "assets/img/juliadata.png"
 },{ topic: "Deep Learning"
-	,href: "https://github.com/JuliaML/"  // https://github.com/FluxML/ ?
+	,href: "https://github.com/JuliaML/"  // https://github.com/FluxML/ ? => img?
 	,img: "assets/img/juliaml.png"
 },{ topic: "Images & Visualization"
 	,href: "https://github.com/JuliaGL"
@@ -34,7 +34,7 @@ function createDomains(){
 	var fragment = document.createDocumentFragment();
 	domains.forEach((ele, i)=>{
 		var domainBox = document.createElement('a');
-		domainBox.className = "domain-box";
+		domainBox.className = "domain-box box br3";
 		domainBox.href = ele.href;
 		domainBox.innerHTML = "<div><img src='" + ele.img + "'><p>" + ele.topic + "</p></div>";
 		fragment.appendChild(domainBox);

@@ -41,19 +41,20 @@ if(window.innerWidth >= 768){
 $$("#videoSlideShow").style.height = height + "px";
 
 var count = 2;
-var video_slide_data = videoIds.map((el, i)=>{
+var video_slide_data = (new Array(3)).fill(0)
+.map(Math.random)
+.map(e => e * (videoIds.length/(count)))
+.map((e, i)=> e + (videoIds.length/count)*i)
+.map(Math.floor)
+.map(e => videoIds[e])
+.map((el, i)=>{
   return createIframe(makeUrl(el, playlistId, i), height);
 }).map((html)=>{
   return {
     img: "",
     html
   }
-}).reduce((acc, el, i, list)=>{
-  if(Math.random() < (count/list.length)){
-    acc.push(el)
-  }
-  return acc;
-}, []).slice(0, count + 1)
+}).slice(0, count + 1)
 
 var videoSlide = new Slide(video_slide_data, $$("#videoSlideShow"), {
   list:false,
