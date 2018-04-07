@@ -107,10 +107,12 @@ Slide.prototype.setSlide = function(count){
 }
 
 Slide.prototype.removeOld = function(){
-	this.old.style.zIndex = this.low;
-	addClass(this.old, "dn");
-	removeClass(this.old, "show");
-	removeClass(this.old.querySelector('.text'), " animated " + this.animationIn)
+	if(this.old){
+		this.old.style.zIndex = this.low;
+		addClass(this.old, "dn");
+		removeClass(this.old, "show");
+		removeClass(this.old.querySelector('.text'), " animated " + this.animationIn)
+	}
 }
 
 var imageSlide = new Slide(image_slide_data, $$("#imageSlideShow"));
