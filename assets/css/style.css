@@ -205,7 +205,7 @@ h1{
 One line
  */
 .oneline{
-	background: #5f6896;
+	background: #404975;
 	color: #fff;
 	width: 100vw;
 	line-height: 6em;
@@ -298,6 +298,7 @@ One line
 #imageSlideShow{
 	width: 100vw;
 	position: relative;
+	background: #fff;
 }
 
 #imageSlideShow .shade{
@@ -344,8 +345,8 @@ One line
 /* community */
 
 #community{
-	background: #a9ea73;
-	color:#354a1f;
+	background: #92d659;
+	color:#18230c;
 }
 
 #community img{
@@ -371,7 +372,7 @@ One line
 }
 
 #community .links{
-	background: #688c3e;
+	background: #8cc550;
 }
 
 #community .links li{

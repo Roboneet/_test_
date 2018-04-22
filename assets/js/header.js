@@ -13,7 +13,7 @@ logoColor("#fff");
 window.addEventListener("scroll",(event)=>{
 	var cr = content.getBoundingClientRect();
 	var hr = header.getBoundingClientRect();
-	
+
 	var val = (cr.top - hr.top - 70 > 0)
 	if(val == white)return;
 
@@ -21,14 +21,14 @@ window.addEventListener("scroll",(event)=>{
 	if(white){
 		removeClass($$(".menu_items"), "hide");
 		logoColor("#fff");
-		removeClass(header, "black");
+		removeClass(header, "near-black");
 		addClass(header, "white");
 		lines.forEach((l)=>l.style.borderColor='#fff');
 
 	}else{
 		addClass($$(".menu_items"),"hide");
 		logoColor("#000");
-		addClass(header, "black");
+		addClass(header, "near-black");
 		removeClass(header, "white");
 		lines.forEach((l)=>l.style.borderColor='#000');
 	}
