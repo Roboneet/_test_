@@ -1,10 +1,12 @@
 var image_slide_data = [{
 	img: "url(assets/img/celeste.jpg) 0 0 / cover no-repeat",
 	html: "<h1 class='near-white f1-ns f3'>Julia Joins Petaflop Supercomputer Club </h1><p class='near-white'>Julia has joined the rarefied ranks of computing languages that have achieved peak performance exceeding one petaflop per second-the so-called 'Petaflop Club.'</p>"
+	,bgColor: "#2b334e"
 }, 
 {
-	img: "#777",
+	img: "#048",
 	html: "<p>dummy content</p>"
+	,bgColor: "#1d2340"
 }]
 
 function Slide(data, container, {list=true, arrows=false, debug=false, events={}, transitionDelay="1s", animationIn="fadeInUp"}={}){
@@ -37,6 +39,8 @@ function Slide(data, container, {list=true, arrows=false, debug=false, events={}
 		for(var k in events){
 			slide[k] = events[k];
 		}
+		if(ele.bgColor)
+			slide.setAttribute("data-bg-color", ele.bgColor);
 		fragment.appendChild(slide);
 		state.appendChild(document.createElement('li'))
 	})
@@ -93,6 +97,10 @@ Slide.prototype.setSlide = function(count){
 	this.log(newSlide)
 	newSlide.style.zIndex = this.high;
 	removeClass(newSlide, "dn");
+	var shade = this.container.querySelector(".shade")
+	if(shade != null){
+		shade.style.background = "linear-gradient(" + newSlide.getAttribute("data-bg-color") + " 0, transparent)";
+	}
 	addClass(newSlide, "show");
 	addClass(newSlide.querySelector('.text'), "animated " + this.animationIn)
 	if(this.old != null)

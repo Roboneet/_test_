@@ -38,6 +38,15 @@
 	}
 }
 
+.small{
+	font-size: .775em;
+	font-weight: 700;
+}
+
+.hide{
+	opacity: 0;
+}
+
 #wrapper, #background, #foreground{
 	width: 100vw;
 	overflow-x: hidden;
@@ -56,6 +65,14 @@
 
 #background, #foreground{
 	position: absolute;
+}
+#foreground{
+	left: 0;
+	transition: all .5s cubic-bezier(0.7, 0.18, 0.25, 0.84);
+}
+
+#foreground.move-left{
+	left: -250px
 }
 
 #stage{
@@ -85,19 +102,18 @@ h1{
 
 .heading{
 	width: 100vw;
-	
+	height: 75vh;
 }
-.heading{
-	height: 50vh;
-}
+
 
 .menu_items a{
 	text-decoration: none;
-	color: #000;
+	color: inherit;
 }
 
 .menu_items{
 	text-transform:uppercase;
+	transition: all .5s linear;
 }
 
 
@@ -174,7 +190,8 @@ h1{
 
 @media only screen and (min-width:768px){
 	.ham{
-		display: none;
+		/*display: none;*/
+		float: right;
 	}
 }
 
@@ -191,7 +208,7 @@ One line
 	background: #5f6896;
 	color: #fff;
 	width: 100vw;
-	line-height: 4em;
+	line-height: 6em;
 	font-size: 1.3em;
 }
 
@@ -199,8 +216,12 @@ One line
 
 #videos{
 	width: 100vw;
-	background: #d46059;
+	background: #ea7474;
 	padding: 50px 0 ;
+}
+
+#videos .desc{
+	color: #4a1f1f;
 }
 
 /* Features */
@@ -270,11 +291,25 @@ One line
 
 #blogTwitter{
 	padding: 50px 0;
-	background: #a978c0;
+	background: #af74ea;
+	color:#2c1f4a;
 }
 
 #imageSlideShow{
 	width: 100vw;
+	position: relative;
+}
+
+#imageSlideShow .shade{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	background: linear-gradient(#2b334e 0, transparent);
+	height: 20%;
+	z-index: 100;
+	transition: all .4s linear;
+	
 }
 
 #videoSlideShow{
@@ -309,7 +344,8 @@ One line
 /* community */
 
 #community{
-	background: #63ac56;
+	background: #a9ea73;
+	color:#354a1f;
 }
 
 #community img{
@@ -318,8 +354,8 @@ One line
 }
 
 #community .invite{
-	background:#539247;
-	box-shadow: 0 5px 0 #305429;
+	background:#8cc550;
+	box-shadow: 0 5px 0 #354a1f;
 	transition: all .5s linear;
 	cursor: pointer;
 }
@@ -335,7 +371,7 @@ One line
 }
 
 #community .links{
-	background: #539247;
+	background: #688c3e;
 }
 
 #community .links li{
@@ -354,7 +390,7 @@ One line
 
 /* footer */
 .footer{
-	background: #4a4949;
+	background: #333;
 	color: #fff;
 	
 }
@@ -363,3 +399,4 @@ One line
 	color: inherit;
 	cursor: pointer;
 }
+

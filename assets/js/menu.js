@@ -43,14 +43,25 @@
 
 (function(){
 	var openMenu = false;
+	// $$(".ham").addEventListener("click", function(event){
+	// 	openMenu = !openMenu;
+	// 	if(openMenu){
+	// 		addClass($$(".menu_items"), "animated fadeInUp");
+	// 		$$(".menu_items").style.display = "block";
+	// 	}else{
+	// 		removeClass($$(".menu_items"), " animated fadeInUp");
+	// 		$$(".menu_items").style.display = "none";
+	// 	}
+	// })
+
 	$$(".ham").addEventListener("click", function(event){
 		openMenu = !openMenu;
 		if(openMenu){
-			addClass($$(".menu_items"), "animated fadeInUp");
-			$$(".menu_items").style.display = "block";
+			addClass($$("#foreground"), "move-left")
 		}else{
-			removeClass($$(".menu_items"), " animated fadeInUp");
-			$$(".menu_items").style.display = "none";
+			removeClass($$("#foreground"), "move-left")
 		}
-	})
+	});
+
+
 })()

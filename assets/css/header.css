@@ -1,0 +1,9 @@
+.header{
+	position:fixed;
+	z-index: 999;
+}
+
+#logo svg{
+	width:90px;
+	height: 70px;
+}
