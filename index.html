@@ -126,9 +126,9 @@
 				</div>
 
 				<!-- oneliner -->
-				<div class="oneline">
+				<div class="oneline sec">
 					<div class="container">
-						<p class="tc fw7">Walks like Python, Runs like C</p>
+						<p class="tc fw9">Walks like Python, Runs like C</p>
 					</div>
 				</div>
 
@@ -140,9 +140,9 @@
 						<div class="fl-ns w-100 pa2 flex-s flex-column justify-center items-center" id="about">
 							<div class="fr-ns w-30 tc pa2"><img src="./assets/img/julia_logo.png"></div>
 							<div class="fr-ns w-70-ns tc pa2">
-								<p class="lh-copy f5 f3-m f2-l measure center pv2 fw7">Julia is a technical computing language.Its familiar syntax and smart compiler give you the highest possible performance from the easiest possible code.</p>
-								<button class="br4 ba b--black bw1 pa2 ma3 dim download">Download<img src="./assets/img/download.png"></button>
-								<button class="br4 ba b--black bw1 pa2 ma3 dim download">View Examples</button>
+								<p class="lh-copy f5 f3-m f2-l measure center pv2 fw2 black">Julia is a technical computing language.Its familiar syntax and smart compiler give you the highest possible performance from the easiest possible code.</p>
+								<button class="br4 bg-white ba bw1 pa2 ma3 dim download">Download<img src="./assets/img/download.png"></button>
+								<button class="br4 bg-white ba bw1 pa2 ma3 dim download">View Examples</button>
 							</div>
 							
 						</div>
@@ -150,13 +150,13 @@
 					<!-- end of Download -->
 
 					<!-- videos -->
-					<div class="fl w-100 pa2 flex justify-center" id="videos">
+					<div class="fl w-100 pa2 flex justify-center sec" id="videos">
 						<div class="container flex-s flex-column">
 							<div class="fl w-50-ns pa2 h5-ns slide-show ma3" id="videoSlideShow">
 								<!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLP8iPy9hna6QpP6vqZs408etJVECPKIev" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 							</div>
-							<div class="fr w-40-ns f5 f3-m f3-l pa2 near-white desc">
-								<p class="lh-copy ph4 tj fw7">JuliaCon 2017, the annual conference on Julia, was held from June 20th to June 24th at the University of California, Berkeley. These are videos from our YouTube playlist of the talks. Click on the playlist icon to check out the other videos.</p>
+							<div class="fr w-40-ns f5 f3-m f3-l pa2 desc">
+								<p class="lh-copy ph4 tj">JuliaCon 2017, the annual conference on Julia, was held from June 20th to June 24th at the University of California, Berkeley. These are videos from our YouTube playlist of the talks. Click on the playlist icon to check out the other videos.</p>
 							</div>
 						</div>
 					</div>
@@ -164,9 +164,11 @@
 
 					<!-- domains -->
 					<div class="container">
-						<div class="fl w-100 pa2" id="domains">
-							<div class="measure pa2 f2 tc-s fw7">Domains </div>
-							<div class="domain-container flex flex-wrap justify-center-ns justify-center-s">
+						<div class="fl w-100 pa2 tc" id="domains">
+							<div class="measure pa2 f2 tc black">Domains </div>
+							<div class="pa2 f4 tc">Explore various julia packages for cleaner, shorter and happier code</div>
+							<button class="br4 bg-white ba bw1 pa2 ma3 dim download">See More</button>
+							<div class="domain-container flex flex-wrap justify-center">
 								
 							</div>
 						</div>
@@ -174,16 +176,16 @@
 					<!-- end of domains -->
 
 					<!-- twitter and blog -->
-					<div class="fl w-100 pa2" id="blogTwitter">
-						<div class="container">
+					<div class="fl w-100 pa2 sec" id="blogTwitter">
+						<div class="container _big">
 							<div class="fl-ns w-50-ns w-100 center pa4">
-								<div class="measure pa2 f2-l lh-copy tc-s fw7">People are taking about it</div>
+								<div class="measure pa2 f2-l lh-copy tc-s black">People are talking about it</div>
 								            <a class="twitter-timeline"  href="https://twitter.com/hashtag/julialang" data-widget-id="982277860403511301">#julialang Tweets</a>
 	            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           
 							</div>
 							<div class="fl-ns w-50-ns w-100 center pa4">
-								<div class="measure pa2 f2-l lh-copy tc-s  fw7">Blog</div>
+								<div class="measure pa2 f2-l lh-copy tc-s black">Blog</div>
 								<!-- (blog.js) -->
 								<!-- julia blog --> 
 								<div class="blog bg-white br3 mv2" id="juliablog">
@@ -206,11 +208,10 @@
 					<div class="container">
 						<div class="fl w-100 pa2" id="features">
 							<div>
-								<p class="measure pa2 f2  fw7"> Julia has great features
-									<div>
-										<img class="fr-ns w-50-ns w-100" src="assets/img/benchmarks.png" style="
-">
-										<p class="fl-ns w-50-ns w-100 lh-copy fw7 tj measure pv4-ns ph4-s">Julia’s LLVM-based just-in-time (JIT) compiler combined with the language’s design allow it to approach and often match the performance of C.
+								<p class="measure pa2 f2 tc black"> Julia has great features
+									<div  class="tc">
+										<img class="w-70" src="assets/img/benchmarks.png">
+										<p class=" w-100 lh-copy fw3 tj pv4-ns ph4-s">Julia’s LLVM-based just-in-time (JIT) compiler combined with the language’s design allow it to approach and often match the performance of C.
 To get a sense of the relative performance of Julia compared to other languages that can or could be used for numerical and scientific computing, we’ve written a small set of micro-benchmarks in a variety of languages:
 <a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.c">C</a>,
 <a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.f90">Fortran</a>,
@@ -234,15 +235,15 @@ We encourage you to skim the code to get a sense for how easy or difficult it is
 					<!-- end of features -->
 
 					<!-- community section -->
-					<div class="fl w-100 white" id="community">
+					<div class="fl w-100 sec" id="community">
 						<div class="container  pa4-ns pv4">
-							<div class="f2 tc fw7">Join us on Slack!</div>
+							<div class="f2 tc">Join us on Slack!</div>
 							<div class="flex flex-wrap flex-row pa4-ns justify-center items-center">
 								<img class="slack-link" src="assets/img/slack.png">
 								<a href="https://slackinvite.julialang.org/"><div class="pa3 invite br3 mh4"> Get an Invite </div></a>
 							</div>
 						</div>
-					    <div class="links w-100 ">
+					    <div class="links w-100">
 						    <ul class="list pv4 flex justify-center flex-wrap">
 							    <a><li class="bg-white dim"><img src="assets/img/github.png"></li></a>
 							    <a><li class="bg-white dim"><img src="assets/img/discourse.png"></li></a>
@@ -273,7 +274,7 @@ We encourage you to skim the code to get a sense for how easy or difficult it is
 
 		<!-- menu -->
 		<div id="main-menu">
-			<nav class="flex justify-around flex-column list white pa4 fw7 f4">
+			<nav class="flex justify-around flex-column list pa4 fw9 f4">
 				<li><a href="http://juliacon.org" class="">Juliacon</a></li>
 				<li><a href="/soc/ideas-page.html" class="">GSoC</a></li>
 				<li><a href="/publications/" class="">Publications</a></li>

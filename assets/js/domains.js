@@ -36,7 +36,11 @@ function createDomains(){
 		var domainBox = document.createElement('a');
 		domainBox.className = "domain-box box br3";
 		domainBox.href = ele.href;
-		domainBox.innerHTML = "<div><img src='" + ele.img + "'><p>" + ele.topic + "</p></div>";
+		domainBox.innerHTML = "<div>\
+						<img src='" + ele.img + "'>\
+						<p class='hover-pop'>" + ele.topic + "</p>\
+						</div>";
+
 		fragment.appendChild(domainBox);
 	})
 	container.appendChild(fragment);

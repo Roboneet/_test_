@@ -4,9 +4,9 @@ var image_slide_data = [{
 	,bgColor: "#2b334e"
 }, 
 {
-	img: "#048",
+	img: "#7d8994",
 	html: "<p>dummy content</p>"
-	,bgColor: "#1d2340"
+	,bgColor: "#7d8994"
 }]
 
 function Slide(data, container, {list=true, arrows=false, debug=false, events={}, transitionDelay="1s", animationIn="fadeInUp"}={}){

@@ -3,6 +3,12 @@
 	z-index: 999;
 }
 
+@media only screen and (max-width:768px){
+	.header{
+		background: #FFF;
+	}
+}
+
 #logo svg{
 	width:90px;
 	height: 70px;

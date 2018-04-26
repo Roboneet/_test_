@@ -61,7 +61,7 @@
     left: calc(100vw - 250px);
     width: 300px;
     height: 100vh;
-    background: #333;
+    background: #eee;
 }
 
 #main-menu nav{
@@ -78,6 +78,6 @@
 }
 
 #main-menu li:hover{
-	color: #76efc3;
+	color: #555;
 	padding-left: 2px;
 }
