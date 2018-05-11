@@ -6,6 +6,7 @@
 @media only screen and (max-width:768px){
 	.header{
 		background: #FFF;
+		box-shadow: 0 5px 5px #777;
 	}
 }
 
