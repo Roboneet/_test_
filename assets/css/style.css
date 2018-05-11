@@ -178,7 +178,7 @@ h1{
 .container{
 	width: 70vw;
     margin: 0px auto;
-    color: #6d6f7b;
+    color: #30458c;
 }
 
 ._big{
@@ -191,7 +191,11 @@ h1{
 }
 
 .download{
-	cursor:pointer;
+	cursor: pointer;
+    background: #31458c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
 }
 .download img{
 	height: 15px;
@@ -225,6 +229,8 @@ One line
 	line-height: 6em;
 	font-size: 1.3em;
 	padding: 10px 0 !important;
+	/*text-shadow: 0px 3px 5px #aaa;*/
+    border: none;
 }
 
 /* Videos */

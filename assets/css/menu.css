@@ -62,6 +62,8 @@
     width: 300px;
     height: 100vh;
     background: #eee;
+    color: #31458c;
+    box-shadow: inset 5px 0px 10px #aaa;
 }
 
 #main-menu nav{

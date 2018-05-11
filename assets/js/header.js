@@ -1,6 +1,7 @@
 (function(){
 if(window.innerWidth < 768){
 	Array.from($$(".ham").children).forEach((l)=>l.style.borderColor='#000');
+	addClass($$(".header"), "flex flex-row-reverse justify-between items-center");
 	return;
 }
 
